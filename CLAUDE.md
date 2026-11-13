@@ -576,8 +576,17 @@ RAG knowledge library is working; assistant answers cite library passages (Secti
 Grad-CAM explainability is working: endpoint, Grad-CAM page and Results card (Section 5K).
 
 Automated API tests (20) pass; README, requirements and `.env.example` exist
-(Section 5M). The repository has not been published to GitHub, and the app
-has not been deployed.
+(Section 5M).
+
+**Published on GitHub (2026-11-13):** <https://github.com/Abhivnaik/dermaai>.
+The repository is public, on branch `main`, and commits use the GitHub noreply
+email. Before publishing, a secret scan confirmed the Gemini key is in no
+committed file; `.env` and `*.pth` are ignored. The model weights are attached
+to release **v1.0** (<https://github.com/Abhivnaik/dermaai/releases/tag/v1.0>),
+and the README links to them. Git and the GitHub CLI were installed with
+winget, and `gh` is logged in as Abhivnaik. In this environment, call them by
+full path (`C:\Program Files\Git\cmd\git.exe`, `C:\Program Files\GitHub CLI\gh.exe`)
+or put Git on PATH first. The app has not been deployed.
 
 Formal model re-evaluation was skipped by choice; only the training
 notebook's own test figures exist (Section 5L).
@@ -870,8 +879,7 @@ Tests (from `Aproject/`):
 
 ### Candidate next tasks (confirm with the project owner first)
 
-1. Phase 8: initialise git and publish to GitHub. Model weights stay out of
-   git (`*.pth`); share them via Git LFS or a release asset. Add screenshots.
+1. ~~Publish to GitHub with screenshots.~~ Done (see Section 6).
 2. Deployment: choose hosting. The backend needs about 1 GB of RAM for
    PyTorch. Set `CORS_ORIGINS` and point `VITE_API_BASE_URL` at the API.
 3. Phase 7 model re-evaluation, if wanted later (plan in Section 5L).
