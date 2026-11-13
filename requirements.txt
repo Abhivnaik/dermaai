@@ -1,0 +1,27 @@
+# DermaAI backend: Python 3.10
+# Versions are the ones the project was developed and tested with.
+#
+# PyTorch: the app runs on CPU. To avoid downloading the much larger CUDA
+# build on Linux, install torch/torchvision from the CPU index first:
+#   pip install torch==2.14.1 torchvision==0.29.2 --index-url https://download.pytorch.org/whl/cpu
+# then:
+#   pip install -r requirements.txt
+
+# Web API
+fastapi==0.162.5
+uvicorn==0.54.0
+python-multipart==0.0.32
+pydantic==2.14.3
+python-dotenv==1.2.4
+httpx==0.28.1
+
+# Model inference, preprocessing and Grad-CAM
+torch==2.14.1
+torchvision==0.29.2
+numpy==2.2.6
+pillow==12.3.0
+opencv-python-headless==5.0.0.93
+albumentations==2.0.8
+
+# AI assistant and knowledge library (Gemini chat + embeddings)
+google-genai==2.33.0

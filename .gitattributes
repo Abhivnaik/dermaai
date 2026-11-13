@@ -1,0 +1,9 @@
+# Normalise line endings in the repository; check out with the platform's default
+* text=auto
+
+# Binary files
+*.png binary
+*.jpg binary
+*.npy binary
+*.pth binary
+*.ipynb text eol=lf
